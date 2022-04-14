@@ -7,7 +7,7 @@ import {
   useFonts,
   Inter_400Regular,
   Inter_500Medium,
-  Inter_700Bold
+  Inter_700Bold,
 } from '@expo-google-fonts/inter';
 
 import { Routes } from './src/routes';
@@ -29,14 +29,10 @@ export default function App() {
     <View
       style={{
         flex: 1,
-        backgroundColor: theme.colors.background
-      }}>
-
-      <StatusBar
-        style="light"
-        backgroundColor="transparent"
-        translucent
-      />
+        backgroundColor: theme.colors.background,
+      }}
+    >
+      <StatusBar style="light" backgroundColor="transparent" translucent />
 
       <Routes />
     </View>
